@@ -10,17 +10,13 @@ public class Main {
         while (!imie.equals("-")) {
             System.out.println("podaj imiona");
             imie = sc.next();
-            if (!imie.equals("-")) {
-                imiona.add(imie);
-            }
-            else {
-                break;
-            }
+            imiona.add(imie);
         }
-//        imiona.removeLast();
+        imiona.remove("-");
         for (String imiee : imiona){
             System.out.println(imiee);
         }
+        System.out.println(imiona.size());
 
 
     }
